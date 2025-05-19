@@ -146,38 +146,6 @@ footer .socials a:hover {
   color: #8a5c5c;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@media (max-width: 768px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav a {
-    margin: 0.5rem 0;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .about, .work, .contact {
-    padding: 1rem;
-  }
-}
 .contact {
   padding: 3rem 1.5rem;
   background-color: #f9f6f1; /* ніжний пастельний фон */
@@ -224,7 +192,38 @@ footer .socials a:hover {
   text-decoration: underline;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .about, .work, .contact {
+    padding: 1rem;
+  }
+}
 
 @media (max-width: 480px) {
   .hero {
