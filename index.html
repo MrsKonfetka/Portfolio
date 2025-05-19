@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/styles/style.css">
   <title>Maryna Nikolaiets | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="figma.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -30,6 +29,8 @@
     <h2>About Me</h2>
     <p>
         My journey spans from designing landing pages in Figma and developing responsive layouts with HTML/CSS, to coding Python-based tools like a custom newsletter bot. I also enjoyed experimenting with Voxel 3D models in the past, blending design and creativity in new ways.
+    </p>
+    <p>
         Whether it’s prototyping ideas, refining visual details, or exploring new technologies, I love learning and creating across disciplines.
     </p>
     <ul>
@@ -67,20 +68,24 @@
     </div>
   </section>
 
-  <!-- <section id="contact" class="contact">
+  <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <p>If you'd like to get in touch, you can reach me directly via:</p>
-    <ul>
-        <li><strong>Email:</strong> <a href="marishkamn09@gmail.com">marishkamn09@gmail.com</a></li>
-        <li><strong>Phone:</strong> <a href="tel:+420775381800">+420 775 381 800</a></li>
-    </ul>
-    <form action="mailto:marishkamn09@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+    
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <!-- Hidden input for Netlify form name -->
+        <input type="hidden" name="form-name" value="contact">
+        <!-- Honeypot field (antispam) -->
+        <p hidden>
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
     </form>
-  </section> -->
+  </section>
 
   <footer>
     <p>© 2025 Maryna Nikolaiets</p>

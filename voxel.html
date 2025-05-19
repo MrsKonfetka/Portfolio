@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/voxel_style.css">
     <title>Voxel Arts</title>
 </head>
 <body>
@@ -10,14 +11,18 @@
   <h1>Voxel Art Gallery</h1>
   <div class="gallery-grid">
     <img src="/img/voxels/voxel1.png" alt="Voxel model 1" onclick="openModal(this)">
-    <img src="/img/voxels/voxel2.png" alt="Voxel model 1" onclick="openModal(this)">
-    <img src="/img/voxels/voxel3.png" alt="Voxel model 1" onclick="openModal(this)">
-    <img src="/img/voxels/voxel4.png" alt="Voxel model 1" onclick="openModal(this)">
-    <img src="/img/voxels/voxel5.png" alt="Voxel model 1" onclick="openModal(this)">
-    <img src="/img/voxels/voxel6.png" alt="Voxel model 1" onclick="openModal(this)">
-    <img src="/img/voxels/voxel7.png" alt="Voxel model 1" onclick="openModal(this)">
-    <img src="/img/voxels/voxel8.png" alt="Voxel model 1" onclick="openModal(this)">
+    <img src="/img/voxels/voxel2.png" alt="Voxel model 2" onclick="openModal(this)">
+    <img src="/img/voxels/voxel3.png" alt="Voxel model 3" onclick="openModal(this)">
+    <img src="/img/voxels/voxel4.png" alt="Voxel model 4" onclick="openModal(this)">
+    <img src="/img/voxels/voxel5.png" alt="Voxel model 5" onclick="openModal(this)">
+    <img src="/img/voxels/voxel6.png" alt="Voxel model 6" onclick="openModal(this)">
+    <img src="/img/voxels/voxel7.png" alt="Voxel model 7" onclick="openModal(this)">
+    <img src="/img/voxels/voxel8.png" alt="Voxel model 8" onclick="openModal(this)">
   </div>
+  <div class="youtube-button">
+  <a href="https://www.youtube.com/@marishkamn5935" target="_blank">🎥 Watch more Voxel Arts on my YouTube</a>
+</div>
+
 </section>
 
 <!-- Modal viewer -->
@@ -25,55 +30,14 @@
 <img id="modal-img" src="" alt="Full view">
 </div>
 
-<style>
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-.gallery-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.gallery-grid img:hover {
-  transform: scale(1.05);
-}
-.gallery h1{
-    text-align: center;
-}
-.modal {
-display: none;
-position: fixed;
-top: 0; left: 0;
-width: 100vw; height: 100vh;
-background: rgba(0,0,0,0.7);
-justify-content: center;
-align-items: center;
-z-index: 1000;
-}
-.modal img {
-max-width: 90%;
-max-height: 80%;
-border-radius: 1rem;
-}
-.modal.show {
-display: flex;
-}
-</style>
-
 <script>
-function openModal(img) {
-document.getElementById('modal-img').src = img.src;
-document.getElementById('modal').classList.add('show');
-}
-function closeModal() {
-document.getElementById('modal').classList.remove('show');
-}
+  function openModal(img) {
+  document.getElementById('modal-img').src = img.src;
+  document.getElementById('modal').classList.add('show');
+  }
+  function closeModal() {
+  document.getElementById('modal').classList.remove('show');
+  }
 </script>
 
 </body>

@@ -224,6 +224,8 @@ footer .socials a:hover {
   text-decoration: underline;
 }
 
+
+
 @media (max-width: 480px) {
   .hero {
     padding: 2rem 1rem;
