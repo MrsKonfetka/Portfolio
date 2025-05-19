@@ -69,6 +69,37 @@ nav a:hover {
   gap: 1.5rem;
 }
 
+.about {
+  background-color: #f5ebf8;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.about h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #8a5c5c;
+}
+
+.work {
+  background-color: #fff0f5;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.work h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #8a5c5c;
+}
+
+
 .project {
   background: #f8f0ff;
   border-radius: 12px;
@@ -87,10 +118,32 @@ nav a:hover {
 }
 
 .project a {
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: 0.5rem;
   color: #6b4c9a;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #d2b4f0;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, transform 0.2s;
+
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+
+.btn:hover {
+  background-color: #b28be8;
+  transform: translateY(-2px);
 }
 
 form {
@@ -191,6 +244,7 @@ footer .socials a:hover {
   color: #2b5caa;
   text-decoration: underline;
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
