@@ -1,0 +1,102 @@
+.certificates-page {
+  padding: 2rem;
+  background-color: #fefefe;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #f5f6fa, #ffffff);
+}
+
+.certificates h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cert-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cert-item {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.cert-item img {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-item p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cert-item a {
+  display: inline-block;
+  color: #6b79c5;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #6b79c5;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.cert-item a:hover {
+  background-color: #6b79c5;
+  color: #fff;
+}
+
+.cert-item img {
+  width: 50px;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+header nav a.active,
+header nav a:hover {
+  color: #6b79c5;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  border-top: 1px solid #eee;
+}
+
+.cert-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}

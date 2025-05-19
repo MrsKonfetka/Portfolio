@@ -84,6 +84,15 @@ nav a:hover {
   color: #8a5c5c;
 }
 
+.highlight-link {
+  color: #6b79c5;
+  font-weight: 600;
+  text-decoration: none;
+}
+.highlight-link:hover {
+  color: #4e5baa;
+}
+
 .work {
   background-color: #fff0f5;
   border-radius: 1rem;
@@ -98,7 +107,6 @@ nav a:hover {
   margin-bottom: 1.5rem;
   color: #8a5c5c;
 }
-
 
 .project {
   background: #f8f0ff;
@@ -118,7 +126,6 @@ nav a:hover {
 }
 
 .project a {
-  /* display: inline-block; */
   margin-top: 0.5rem;
   color: #6b4c9a;
   text-decoration: none;
@@ -139,7 +146,6 @@ nav a:hover {
   display: block;
   text-align: center;
 }
-
 
 .btn:hover {
   background-color: #b28be8;
